@@ -22,7 +22,7 @@ export default function GifListContainer() {
   };
 
   return (
-    <div style={{display: "flex", justifyContent: "space-between"}}>
+    <div style={{display: "flex", justifyContent: "space-around"}}>
       <GifList gifList={gifsToDisplay} />
       <GifSearch handleSubmit={handleSubmit}/>
     </div>

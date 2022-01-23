@@ -12,7 +12,7 @@ export default function GifSearch({ handleSubmit }) {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label for="search">Enter a Search Term:</label><br />
+                <label htmlFor="search" >Enter a Search Term:</label><br />
                 <input type="text" name="search" onFocus={handleFocus} onChange={handleChange} value={inputTerm} /><br />
                 <input type="submit" value="Find Gifs" />
             </form>

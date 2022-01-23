@@ -2,9 +2,9 @@ export default function GifList({ gifList }) {
   return (
     <div>
       <ul style={{listStyleType: "none"}} >
-        {gifList.map((gif, index) => {
+        {gifList.map((gif) => {
           return (
-            <li key={index}>
+            <li key={gif.id}>
               <img src={gif.images.original.url} alt="Random gif" />
             </li>
           );
